@@ -1,0 +1,15 @@
+modules:
+  jira:projectPage:
+    - key: plugin-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      title: plugin
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/16e5ca66-434b-442a-9700-b962d2c7cf23
